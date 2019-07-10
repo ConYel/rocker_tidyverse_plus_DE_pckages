@@ -89,7 +89,7 @@ RUN apt-get update \
           \nloadRData="0" \
           \nsaveAction="0"' \
           > /home/rstudio/.rstudio/monitored/user-settings/user-settings \
-  && chown -R rstudio:rstudio /home/ \
+ # && chown -R rstudio:rstudio /home/ \
   && RUN R -e 'BiocManager::install(c("wesanderson","edgeR","rafalib","derfinderPlot","derfinder"))'
 
 COPY userconf.sh /etc/cont-init.d/userconf
