@@ -34,6 +34,7 @@ RUN apt-get update \
     libllvm3.8 \
     libobjc4 \
     libgc1c2 \
+    libbz2-dev \
   && if [ -z "$RSTUDIO_VERSION" ]; then RSTUDIO_URL="https://www.rstudio.org/download/latest/stable/server/debian9_64/rstudio-server-latest-amd64.deb"; else RSTUDIO_URL="http://download2.rstudio.org/server/debian9/x86_64/rstudio-server-${RSTUDIO_VERSION}-amd64.deb"; fi \
   && wget -q $RSTUDIO_URL \
   && dpkg -i rstudio-server-*-amd64.deb \
@@ -89,7 +90,7 @@ RUN apt-get update \
           \nsaveAction="0"' \
           > /home/rstudio/.rstudio/monitored/user-settings/user-settings \
   && chown -R rstudio:rstudio /home/ \
-  && RUN R -e 'BiocManager::install(c("wesanderson","edgeR","rafalib"))'
+  && RUN R -e 'BiocManager::install(c("wesanderson","edgeR","rafalib","derfinderPlot","derfinder"))'
 
 COPY userconf.sh /etc/cont-init.d/userconf
 
