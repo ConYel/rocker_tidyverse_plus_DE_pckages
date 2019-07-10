@@ -18,4 +18,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     selectr \
     BiocManager \
     edgeR \
-    derfinderPlot
+    derfinderPlot \
+    ggseqlogo \
+    ComplexHeatmap \
+    circlize \
+    DESeq2 \
+    GenomicAlignments \
+    ggpmisc \
+    wesanderson 
+    
