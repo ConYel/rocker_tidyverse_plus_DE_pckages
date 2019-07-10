@@ -1,4 +1,4 @@
-FROM rocker/rstudio:devel
+FROM rocker/rstudio:3.6.0
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libxml2-dev \
