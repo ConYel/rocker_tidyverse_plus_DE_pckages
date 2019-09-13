@@ -1,6 +1,6 @@
 FROM bioconductor/release_core2
 
-RUN sudo apt-get update && sudo apt-get install libmagick++-dev \
+RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 && R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
 "tidyverse", "devtools", "edgeR", "wesanderson", "ggpmisc", \
 "GenomicAlignments", "ggseqlogo", "ComplexHeatmap",\
