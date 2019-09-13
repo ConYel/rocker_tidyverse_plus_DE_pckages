@@ -1,5 +1,9 @@
 FROM bioconductor/release_core2
 
-RUN R -e 'BiocManager::install(c("tidyverse",  \
-"devtools", "edgeR", "wesanderson", "ggpmisc", \
-"GenomicAlignments", "ggseqlogo", "ComplexHeatmap", "circlize", "DESeq2", "derfinderPlot", "Rsubread"))'
+RUN sudo apt-get update && sudo apt-get install libmagick++-dev \
+&& R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
+"tidyverse", "devtools", "edgeR", "wesanderson", "ggpmisc", \
+"GenomicAlignments", "ggseqlogo", "ComplexHeatmap",\
+"circlize", "DESeq2", "derfinderPlot", "Rsubread", \
+"regionReport", "rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
+"NOISeq", "clusterProfiler", "gridExtra", "ggbio", "vqv/ggbiplot"  ask = F))'
