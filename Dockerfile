@@ -6,4 +6,4 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "GenomicAlignments", "ggseqlogo", "ComplexHeatmap",\
 "circlize", "DESeq2", "derfinderPlot", "Rsubread", \
 "regionReport", "rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
-"NOISeq", "clusterProfiler", "gridExtra", "ggbio", "vqv/ggbiplot",  ask = F))'
+"NOISeq", "clusterProfiler", "statmod", "gridExtra", "ggbio", "vqv/ggbiplot",  ask = F))'
