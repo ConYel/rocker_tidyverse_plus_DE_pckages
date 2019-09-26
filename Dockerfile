@@ -5,6 +5,6 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "tidyverse", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
 "hexbin", "ComplexHeatmap",  "circlize", "gtools","Rsubread", \
 "NOISeq", "edgeR", "DESeq2", "derfinder", "derfinderPlot", "regionReport", \
-"EDASeq", "RUVSeq", "rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
+"EDASeq", "RUVSeq", "sva","rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
 "ggbio", "vqv/ggbiplot",  ask = F))'
