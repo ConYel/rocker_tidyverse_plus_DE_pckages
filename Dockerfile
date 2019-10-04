@@ -7,4 +7,4 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "NOISeq", "edgeR", "DESeq2", "derfinder", "derfinderPlot", "regionReport", \
 "EDASeq", "RUVSeq", "sva","rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
-"ggbio", "vqv/ggbiplot",  ask = F))' && R -e 'tinytex::install_tinytex()'
+"ggbio", "vqv/ggbiplot", "recount",  ask = F))' && R -e 'tinytex::install_tinytex()'
