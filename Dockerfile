@@ -5,6 +5,6 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "tidyverse", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
 "hexbin", "pheatmap", "RColorBrewer", "ComplexHeatmap", "circlize", "gtools","Rsubread", \
 "NOISeq", "edgeR", "DESeq2", "derfinder", "derfinderPlot", "regionReport", \
-"EDASeq", "RUVSeq", "sva","rafalib", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
+"EDASeq", "RUVSeq", "sva","rafalib", "org.Hs.eg.db", "TxDb.Hsapiens.UCSC.hg38.knownGene",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
 "ggbio", "vqv/ggbiplot", "recount", "plyranges", "rbamtools", ask = F))' && R -e 'tinytex::install_tinytex()'
