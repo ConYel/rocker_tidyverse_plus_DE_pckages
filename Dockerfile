@@ -8,4 +8,4 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "EDASeq", "RUVSeq", "sva","rafalib", "org.Hs.eg.db", \
 "BSgenome.Mmusculus.UCSC.mm10" ,"TxDb.Hsapiens.UCSC.hg38.knownGene", "BSgenome.Hsapiens.UCSC.hg38",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
-"ggbio", "vqv/ggbiplot", "recount", "plyranges", "rbamtools", "annotatr", ask = F))' && R -e 'tinytex::install_tinytex()'
+"ggbio", "vqv/ggbiplot", "recount", "plyranges", "rbamtools", "annotatr", "tximport", ask = F))' && R -e 'tinytex::install_tinytex()'
