@@ -9,4 +9,5 @@ RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 "BSgenome.Mmusculus.UCSC.mm10", "TxDb.Mmusculus.UCSC.mm10.knownGene",\
 "TxDb.Hsapiens.UCSC.hg38.knownGene", "BSgenome.Hsapiens.UCSC.hg38",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
-"ggbio", "vqv/ggbiplot", "recount", "plyranges", "rbamtools", "annotatr", "tximport", ask = F))' && R -e 'tinytex::install_tinytex()'
+"ggbio", "vqv/ggbiplot", "thomasp85/patchwork","recount", "plyranges", \
+"rbamtools", "annotatr", "tximport", ask = F))' && R -e 'tinytex::install_tinytex()'
