@@ -1,4 +1,4 @@
-FROM bioconductor/devel_core2
+FROM bioconductor/bioconductor_docker:devel
 
 RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
 && R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
