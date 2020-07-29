@@ -1,7 +1,7 @@
 FROM bioconductor/bioconductor_docker:devel
 
-RUN sudo apt-get update -y && sudo apt-get install libmagick++-dev -y \
-&& R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
+RUN apt-get update -y 
+RUN R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
 "tidyverse", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
 "hexbin", "pheatmap", "RColorBrewer", "ComplexHeatmap", "circlize", "gtools", "Rsubread", \
 "NOISeq", "edgeR", "DESeq2", "derfinder", "derfinderPlot", "regionReport", \
