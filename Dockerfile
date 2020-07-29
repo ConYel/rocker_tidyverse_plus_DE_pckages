@@ -1,6 +1,6 @@
 FROM bioconductor/bioconductor_docker:devel
 
-RUN apt-get update -y 
+RUN apt-get update
 RUN R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
 "tidyverse", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
 "hexbin", "pheatmap", "RColorBrewer", "ComplexHeatmap", "circlize", "gtools", "Rsubread", \
