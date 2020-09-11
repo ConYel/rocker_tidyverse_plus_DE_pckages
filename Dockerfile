@@ -2,7 +2,7 @@ FROM bioconductor/bioconductor_docker:devel
 
 RUN apt-get update
 RUN R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick", \
-"tidyverse", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
+"tidyverse", "vroom", "devtools", "wesanderson", "ggpmisc", "ggseqlogo", \
 "hexbin", "pheatmap", "RColorBrewer", "ComplexHeatmap", "circlize", "gtools", "Rsubread", \
 "NOISeq", "edgeR", "DESeq2", "derfinder", "derfinderPlot", "regionReport", \
 "EDASeq", "RUVSeq", "sva", "rafalib", "org.Hs.eg.db", "org.Mm.eg.db", \
