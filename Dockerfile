@@ -10,4 +10,4 @@ RUN R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick
 "TxDb.Hsapiens.UCSC.hg38.knownGene", "BSgenome.Hsapiens.UCSC.hg38",\
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
 "ggbio", "vqv/ggbiplot", "thomasp85/patchwork","recount", "plyranges", \
-"rbamtools", "annotatr", "tximport", "VennDiagram", ask = F))' && R -e 'tinytex::install_tinytex()'
+"rbamtools", "annotatr", "tximport", "VennDiagram", "PerformanceAnalytics", ask = F))' && R -e 'tinytex::install_tinytex()'
