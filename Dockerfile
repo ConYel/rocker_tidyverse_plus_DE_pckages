@@ -11,4 +11,4 @@ RUN R -e 'BiocManager::install(ask = F)' && R -e 'BiocManager::install(c("magick
 "kableExtra", "gridExtra", "clusterProfiler", "gProfileR", "statmod", \
 "ggbio", "vqv/ggbiplot", "thomasp85/patchwork","recount", "plyranges", \
 "rbamtools", "annotatr", "tximport", "VennDiagram", "PerformanceAnalytics", \
-"GO.db", ask = F))' && R -e 'tinytex::install_tinytex()'
+"GO.db", "corrplot", ask = F))' && R -e 'tinytex::install_tinytex()'
